@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-image: linear-gradient(to right,#e76583d0, #2c1210ad, #5aa09fce,#6192c0d0);
+}
+@font-face {
+    font-family: 'font';
+    src: url('idroid.otf') format('opentype');
+    /*CONTINUAR DAQUI*/
+}
+
+header{
+
+    background-image: linear gradient (to right ,aqua,#e76583d0, #2c1210ad) ;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+nav{
+
+}

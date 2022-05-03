@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatacoes</title>
+
+
+</head>
+<body>
+    <h1>Outras formatacoes</h1>
+    <h2>Codigo-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> e' escrito em linguagem javaScript</p>
+    <pre>
+        <code>
+package aula02;
+public class Caneta {
+String cor;
+String  modelo;
+float ponta;
+int carga;
+boolean tampada;
+
+void status(){
+    System.out.println("Uma caneta " + this.cor);
+    System.out.println("De modelo " + this.modelo);
+    System.out.println("Ponta " + ponta);
+    System.out.println("tem " + this.carga + "% de carga");
+    System.out.println("Esta tampada? " + tampada);
+}
+
+void rabiscar(){
+    if (tampada == true ){
+        System.out.println("Nao posso Rabiscar");
+    } else {
+        System.out.println("Estou Rabiscando");
+    }
+}
+
+void tampar(){
+    this.tampada = true;
+}
+ 
+void destampar(){
+    tampada = false;
+}
+}
+        </code>
+    </pre>
+
+    <h2>Citacoes simples</h2>
+    <p>Um amigo uma vez dise: <q>A vida e' uma life</q></p>
+
+    <h2>Citacoes completas</h2>
+    <p>Segundo Gustavo Guanbara, no seu pdf HTML e CSS para leigos: </p>
+    <blockquote cite="https://gustavoguanabara.github.io/">
+        Antes de começar, fique de olho nos exercícios
+
+    </blockquote>
+
+    <h2>Abreviacoes</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Shetts">CSS</abbr>, estou adorando</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+
+</body>
+</html>
