@@ -11,7 +11,8 @@
         }
 
         table {
-            width: 500px; border-collapse:collapse;
+            width: 450px; border-collapse:collapse;
+            position: relative; /*Faz parte do cabecalho fixo*/
         }
 
         td, th{
@@ -19,8 +20,29 @@
            padding: 10px;
         }
 
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: lightgrey;
+        }
+
+        /*cabecalho fixo*/
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(37, 37, 37) ;
+        }
+
+        /*Efeito Zebrado*/
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
         thead, tfoot{
-            background-color: rgba(128, 128, 128, 0.603);
+            background-color: rgb(37, 37, 37) ;
             color: white;
         }
         td.num {
@@ -33,10 +55,11 @@
         <h1>Uso de Tabelas Grandes</h1>
 
         <table>
+            <caption>Populacao das Provincias Moçambicanas</caption>
             <thead>
                 <tr> <!--Uma linha da cabeca-->
-                    <th>Provincia</th>
-                    <th>Populacao</th>
+                    <th scope="col">Provincia</th>
+                    <th scope="col" style="width: 100px;">Populacao</th>
                 </tr>
             </thead>
             <tbody>
@@ -84,13 +107,41 @@
                     <td>Nampula</td>
                     <td class="num">45.887.021</td>
                 </tr>
+                <tr>
+                    <td>Nacala-Porto</td>
+                    <td class="num">13.976.89</td>
+                </tr>
+                <tr>
+                    <td>Beira</td>
+                    <td class="num">18.693.18</td>
+                </tr>
+                <tr>
+                    <td>Lichinga</td>
+                    <td class="num">9.785.98</td>
+                </tr>
+                <tr>
+                    <td>Quelimane</td>
+                    <td class="num">8.912.78</td>
+                </tr>
+                <tr>
+                    <td>Dondo</td>
+                    <td class="num">4.884.13</td>
+                </tr>
+                <tr>
+                    <td>Monapo</td>
+                    <td class="num">8.452.01</td>
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num">180 390 21</td>
                 </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia harum inventore itaque voluptates fugit reiciendis ex, ducimus earum dicta dolorum velit adipisci dolore quod id voluptatum similique maxime corporis? Cupiditate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quis voluptas soluta illo nostrum distinctio quos ratione nisi corporis eveniet est aspernatur amet accusamus commodi, voluptatem modi reiciendis? Molestias, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p> Ab optio facere accusantium sint laudantium, unde perferendis minus ad, neque enim debitis dignissimos magni, dolorem cumque expedita molestiae sit voluptatum libero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, minus doloribus. Beatae libero amet eum? Iste obcaecati necessitatibus aspernatur atque, nam molestiae rem iure recusandae, aperiam nemo ducimus illo laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia neque quaerat minima voluptatem, mollitia aperiam laudantium eius beatae ab architecto consequuntur sed facilis inventore error velit in obcaecati magni! Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        
+        <p>Neque rerum accusantium repudiandae voluptate voluptatem perferendis, inventore est cupiditate debitis voluptas officiis et ab? Placeat ab autem id quas eveniet ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptates sint maxime. Nostrum, quis. Nulla tempora nostrum velit deserunt dolorum eum quam? Ab incidunt cupiditate eius, obcaecati modi unde ullam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur deleniti vitae repudiandae corporis atque eveniet dolor, voluptate ut consectetur fugit tempore autem ipsam eum maxime aliquid eos non molestiae?Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> <p>Facere accusamus doloremque excepturi, dolores id aperiam distinctio ducimus error alias quaerat soluta impedit ipsam, saepe possimus. Ex error culpa soluta deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nobis fugiat tempora accusamus labore similique ut. Inventore, nulla dolores dicta obcaecati doloremque architecto id quo ipsa voluptatem cum earum nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus doloribus ex, velit cumque culpa nesciunt.</p> A culpa beatae vero ut. Illum nihil aspernatur et pariatur eaque aliquam, dolorum minima eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam dignissimos ut hic, cumque doloremque ipsam minima nemo dicta quod, totam aut nulla obcaecati harum nobis saepe dolore! Debitis, reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate, qui excepturi saepe debitis reprehenderit. Id voluptates nihil vitae! Aliquam harum ducimus modi, autem dolorem magni impedit facilis sit perferendis?</p>
     </body>
 </html>
